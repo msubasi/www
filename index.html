@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mehmet Subaşı Sitesi">
+    <meta name="author" content="mehmetsubasi">
+    <title>Mehmet Subaşı - Vatansever / Bilimsever</title>
+
+    <!-- Critical CSS first, non-critical deferred via preload -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Language switcher style -->
+    <style>
+  .lang-switcher { display:flex; align-items:center; margin-right:2.4rem; flex-shrink:0; }
+  .lang-switcher a { font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight:700; font-size:0.875rem; letter-spacing:0.12em; text-transform:uppercase; text-decoration:none; color:#000; padding:0.35em 0.7em; border:1.5px solid #000; transition:color .3s ease,background-color .3s ease,border-color .3s ease; display:inline-block; line-height:1; }
+  .lang-switcher a:hover, .lang-switcher a:focus { color:#fff; background-color:#E82E31; border-color:#E82E31; text-decoration:none; outline:none; }
+</style>
+
+    <!-- Release loader on DOMContentLoaded — don't wait for images -->
+    <script>
+      (function() {
+        function releaseLoader() {
+          var loader = document.querySelector('.loader');
+          var blur = document.querySelector('.blur-scroll');
+          if (loader) { loader.style.transition = 'opacity 0.2s ease'; loader.style.opacity = '0'; setTimeout(function(){ loader.style.display='none'; }, 220); }
+          if (blur) blur.classList.add('loaded');
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', releaseLoader);
+        } else { releaseLoader(); }
+      })();
+    </script>
+  </head>
+  <body class="fixed-footer" data-aos-duration="700">
+
+    <div class="loader">
+      <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+    </div>
+
+    <div class="click-capture d-lg-none"></div>
+
+    <!-- Navbar Desktop -->
+    <nav id="scrollspy" class="navbar navbar-desctop">
+      <div class="d-flex align-items-center position-relative w-100">
+        <a class="navbar-brand" href="#">Mehmet Subaşı</a>
+        <div class="container">
+          <ul class="navbar-nav navbar-nav-desctop d-none d-lg-block">
+            <li><a class="nav-link active" href="#home">Anasayfa</a></li>
+            <li><a class="nav-link" href="#about">Hakkımda</a></li>
+            <li><a class="nav-link" href="#consulting">Danışmanlık</a></li>
+            <li><a class="nav-link" href="#dijital">Dijital</a></li>
+            <li><a class="nav-link" href="#social">Sosyal Sorumluluk</a></li>
+            <li><a class="nav-link" href="#politika">PolitikA</a></li>
+          </ul>
+          <div class="lang-switcher d-none d-lg-flex">
+            <a href="mehmetsubasi-english.html" title="Switch to English">EN</a>
+          </div>
+          <ul class="social-icons d-none d-lg-block">
+            <li><a href="https://www.linkedin.com/in/mehmetsubasi" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://twitter.com/vizyonmizyon" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/msubasi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          </ul>
+        </div>
+        <button class="toggler d-block d-lg-none">
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <nav class="navbar navbar-mobile d-lg-none">
+      <ion-icon name="close-outline" class="close"></ion-icon>
+      <ul class="navbar-nav navbar-nav-mobile">
+        <li><a class="nav-link active" href="#home">Mehmet</a></li>
+        <li><a class="nav-link" href="#about">Hakkımda</a></li>
+        <li><a class="nav-link" href="#consulting">Danışmanlık</a></li>
+        <li><a class="nav-link" href="#dijital">Dijital</a></li>
+        <li><a class="nav-link" href="#social">Sosyal Sorumluluk</a></li>
+        <li><a class="nav-link" href="#politika">PolitikA</a></li>
+      </ul>
+      <div class="navbar-mobile-footer">
+        <p><a href="mehmetsubasi-english.html" style="font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.875rem;">EN — English</a></p>
+        <p>&copy; 2024 Mehmet Saim Subaşı. Hiçbir Hakkı Saklı değildir. Ben opensource'um ;) .</p>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+
+      <!-- Hero: background set via CSS class so it's non-blocking -->
+      <main id="home" class="masthead jarallax" style="background-image:url('img/edinburghlook.png');">
+        <div class="lines">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4"></div>
+              <div class="col-md-6 hidden-sm col-lg-4"></div>
+              <div class="col-md-6 col-lg-4 hidden-md"></div>
+            </div>
+          </div>
+        </div>
+        <div class="opener blur-scroll">
+          <div class="container">
+            <div class="row mx-0">
+              <div class="col-md-4 px-0">
+                <h1 class="my-0"><span class="text-primary">Ben,</span> Mehmet Subaşı.</h1>
+                <p class="text-dark"><br><span class="text-primary">Vatansever / Bilimsever</span> <br>Dijital Ekonomi sevdalısı</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- ABOUT -->
+      <section id="about" class="section pb-0">
+        <section class="container">
+          <div class="row mx-0 align-items-center">
+            <div class="ocol-md-6 col-lg-4 px-0 mt-5 mt-lg-0" data-aos="fade-right">
+              <div class="experience-number font-weight-bold text-dark d-inline-block d-lg-block align-middle">
+                <span>1970</span>
+              </div>
+              <h5 class="text-uppercase my-0 d-inline-block d-lg-block align-middle">İstanbul <br> doğumluyum.</h5>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0">
+              <h2 class="mt-0 wide-lg mb-5 mb-md-0" data-aos="fade-up">Teksas Üni.de Makina, <span class="text-primary">Columbia Üni.de MBA</span> <br> <span class="text-primary"> </span> mezunuyum.</h2>
+            </div>
+            <div class="col-md-6 col-lg-4 px-0" data-aos="blur">
+              <!-- First content image — no lazy (above fold on some viewports) -->
+              <img alt="" class="w-100" src="img/370x434-2.jpg">
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="col-lg-4 px-0 mt-5 mt-md-0 mb-5 mb-lg-0">
+              <ul class="my-0">
+                <li data-aos="fade-up">
+                  <a href="#" class="text-body">
+                    <span class="media">
+                      <span class="pr-4"> </span>
+                      <span class="media-body">Orta öğrenimimi Alman Lisesi'nde, liseyi Semiha Şakir Lisesi'nde tamamladım, üniversiteyi ise Amerika'nın Austin şehrinde Teksas Üniversitesinde Makine ve Endüstri Mühendisliği konusunda tamamladım. Yükseköğrenimimi Nevyork şehrinde Columbia Üniversitesinde iş idaresi (MBA) alanında yaparak öğrenim hayatımın ön evresini geride bıraktım.</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- CONSULTING -->
+      <section id="consulting" class="section pb-0">
+        <div class="container">
+          <div class="row mx-0 align-items-center">
+            <div class="col-md-6 order-md-2 order-lg-1 col-lg-4 px-0">
+              <h2 class="my-0"></h2>
+              <h2 class="my-0 wide-lg float-md-right float-lg-none offset-lg-5 mb-5 mb-md-0" data-aos="fade-right">Dünyanın en büyük şirketlerine <span class="text-primary">yönetim danışmanlığı </span>alanında hizmet verdim.</h2>
+            </div>
+            <div class="col-md-6 order-md-1 order-lg-2 col-lg-4 px-0" data-aos="blur">
+              <img alt="" class="w-100" loading="lazy" src="img/newholland.jpg">
+            </div>
+            <div class="col-md-6 offset-md-6 offset-lg-0 order-md-3 order-lg-3 col-lg-4 mt-5 pl-0 pl-md-30 mt-md-0" data-aos="fade-up">
+              <p class="mb-0">Detroit'te Ford Motor Co. şirketinde endüstri mühendisi olarak çalıştıktan sonra yönetim danışmanlığı alanına geçerek Monitor ve Bain &amp;Co gibi konusunda dünyanın önde gelen firmalarında üst düzeyde çalışma imkanı yakaladım. Daha yirmili yaşlarımda, Boston, Milano ve Londra'da, dünyanın en büyük şirketlerinin üst düzey kadrolarına yönetim danışmanlığı alanında hizmet verdim ve şirketlerin içlerini ve üst yönetim bakış açılarını çok genç yaşımda kavrama şansı elde ettim.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIGITAL -->
+      <section id="dijital" class="section pb-0">
+        <div class="container">
+          <div class="row mx-0 align-items-center">
+            <div class="col-md-6 order-md-2 order-lg-1 col-lg-4 px-0">
+              <h2 class="my-0"></h2>
+              <h2 class="my-0 wide-lg float-md-right float-lg-none offset-lg-5 mb-5 mb-md-0" data-aos="fade-right">Dijitale <span class="text-primary">daha 1990'larda </span>atıldım.</h2>
+            </div>
+            <div class="col-md-6 order-md-1 order-lg-2 col-lg-4 px-0" data-aos="blur">
+              <img alt="" class="w-100" loading="lazy" src="img/370x434-1.jpg">
+            </div>
+            <div class="col-md-6 offset-md-6 offset-lg-0 order-md-3 order-lg-3 col-lg-4 mt-5 pl-0 pl-md-30 mt-md-0" data-aos="fade-up">
+              <p class="mb-0">Daha sonra, vatanıma dönerek dijital devrimin şirketler üzerindeki etkilerine odaklı Vodaco Pazarlama Stratejileri'ni kurdum. Aynı zamanda, Vodaco Agency olarak da servis veren dijital ajansın, ajans başkanlığını yaptım. Birçok konferans ve eğitimde; pazarlama, dijital pazarlama, online PR, internet, sosyal medya, blok zinciri (blockchain) ve finans sektörünün geleceği gibi konularda konuşmacı ve eğitmen olarak görev aldım ve yine bu konularda birçok yayına imza attım. Bilgi Üniversitesi'nde ise pazarlama konusunda öğretim üyesi görevinde bulundum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL -->
+      <section id="social" class="section pb-0">
+        <div class="container">
+          <div class="row mx-0 align-items-center">
+            <div class="col-md-6 order-md-2 order-lg-1 col-lg-4 px-0">
+              <h2 class="my-0"></h2>
+              <h2 class="my-0 wide-lg float-md-right float-lg-none offset-lg-5 mb-5 mb-md-0" data-aos="fade-right">Sosyal Sorumluluklar, <span class="text-primary">hayatımı zenginleştiren </span> hobim.</h2>
+            </div>
+            <div class="col-md-6 order-md-1 order-lg-2 col-lg-4 px-0" data-aos="blur">
+              <img alt="" class="w-100" loading="lazy" src="img/angel.jpg">
+            </div>
+            <div class="col-md-6 offset-md-6 offset-lg-0 order-md-3 order-lg-3 col-lg-4 mt-5 pl-0 pl-md-30 mt-md-0" data-aos="fade-up">
+              <p class="mb-0">Zamanın izin verdiği ve elimden geldiği kadarıyla sosyal sorumluluk projelerinde, özellikle de teknoloji ve eğitim konularına çalışmalar yapmaktayım. Bu bağlamda Türkiye Bilim Merkezleri Vakfı yönetim kurulu başkanı olarak Türkiye'de gençlere bilimi sevdirme konusuna emek harcadım. Ayrıca, Boğaziçi Üniversitesi Bilgisayar Mühendisliği bölümünde danışma kurulunda Türkiye'nin stratejik gücünü arttırmak için destek olmaya çalıştım. Birçok sivil toplum kuruluşlarında yönetim kurulu başkanlığı yanında, yönetim kurullarında da uzun seneler yer alarak çeşitli sosyal sorumluluk projelerine destek oldum. Galatasaray Klübü üyeliğimin yanında; birçok sektörel dernekte üyeliklerim çerçevesinde katkı sağlamaya çalıştım. Bilim ve eğitimin yanında; felsefe ve politik sistemler merakımı çeken konuların başında geliyor. Evli ve iki temiz kalpli çocuk babasıyım.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POLITIKA -->
+      <section id="politika" class="section pb-0">
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-lg-4 px-0">
+              <h2 class="my-0">PolitikA</h2>
+            </div>
+          </div>
+          <section class="section-sm pb-0">
+            <div class="row mx-0 align-items-center" data-aos="fade-up">
+              <div class="col-md-6 col-lg-4 px-0" data-aos="blur">
+                <a href="#"><figure class="hover"><img alt="" class="w-100" loading="lazy" src="img/news/370x434-1.jpg"></figure></a>
+              </div>
+              <div class="col-md-6 col-lg-4 mt-5 mt-md-0 px-sm-0 pl-md-30px pr-lg-30px">
+                <p><a href="#" class="text-dark font-weight-bold">Vatan Partisi</a></p>
+                <h4 class="my-0 mb-2"><a href="#">Eyüpsultan Belediye Başkan Adayı</a></h4>
+              </div>
+              <div class="col-md-6 col-lg-4 px-0 mt-4 mt-lg-0">
+                <p class="mb-0">Övünmek gibi olmasın ama Vatan partiliyim. Son yıllarda partimin neferi olarak vatanıma hizmet etmek benim için büyük bir onur kaynağı oldu. 2023 genel seçimlerinde Vatan Partisinden İstanbul Milletvekili adayı oldum. 2024 yerel seçimlerinde ise yaklaşık 15 yıldır yaşadığım ilçemde Vatan Partisi Eyüpsultan Belediye Başkan adayı oldum.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+    </div><!-- /wrapper -->
+
+    <!-- Footer -->
+    <footer class="section bg-gray">
+      <div class="container">
+        <div class="lines">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4"></div>
+              <div class="col-md-6 hidden-sm col-lg-4"></div>
+              <div class="col-md-6 col-lg-4 hidden-md"></div>
+            </div>
+          </div>
+        </div>
+        <section class="section-sm pb-0">
+          <div class="row mx-0">
+            <div class="col-md-6 col-lg-6 pl-0 pr-md-30px">
+              <p class="mb-0"><strong>&copy; S. Mehmet Subaşı. 2024</strong> Hiçbir Hakkı Saklı değildir. Ben opensource'um ;)</p>
+            </div>
+            <div class="col-md-6 col-lg-6 pl-0 pr-md-30px mt-5 mt-md-0">
+              <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/mehmetsubasi" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://twitter.com/vizyonmizyon" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/msubasi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <!-- JS: jQuery and core libs deferred to end of body (non-blocking) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- interface.js: window.load listener overridden above; keeps scroll/AOS/jarallax init -->
+    <script src="js/interface.js"></script>
+
+  </body>
+</html>
